@@ -1,4 +1,4 @@
-use std::io;
+use std::io::{self, Read};
 
 fn main() {
     let mut fahrenheit_temperature = String::new();
@@ -17,5 +17,9 @@ fn main() {
     };
     let celsius_temperature = (fahrenheit_temperature - 32.0) /1.8;
     println!("{fahrenheit_temperature} fahrenheit to celsius is {celsius_temperature}.");
+    println!("Press enter to close the program");
+    io::stdin()
+        .read_line(&mut String::new())
+        .expect("meow");
 }
 
