@@ -1,4 +1,4 @@
-use std::io::{self, Read};
+use std::io;
 
 fn main() {
     let mut fahrenheit_temperature = String::new();
