@@ -1,0 +1,1 @@
+Sends a notification 15 minutes after doing nothing that says "I lost the game"
